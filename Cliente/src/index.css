@@ -1,0 +1,117 @@
+/* Estilo global */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
+/* Título */
+h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Botón agregar */
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Tarjeta de tarea */
+li {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Texto de tarea */
+li h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+li p {
+  margin: 4px 0 0 0;
+  color: #4b5563;
+}
+
+/* Acciones */
+a, .text-red-500 {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+a:hover {
+  background-color: #dbeafe;
+}
+
+.text-red-500 {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.text-red-500:hover {
+  background-color: #fecaca;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.paginator span {
+  font-size: 16px;
+  padding: 0 20px;
+}
+

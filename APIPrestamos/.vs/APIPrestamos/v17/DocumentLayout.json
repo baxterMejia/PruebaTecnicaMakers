@@ -1,0 +1,330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\controllers\\loancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{778C24F3-95B0-4820-9745-A45A497D4D04}|Domain\\Domain.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\domain\\dtos\\loanrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{778C24F3-95B0-4820-9745-A45A497D4D04}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\loanrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\dataaccess\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\loanrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\dataaccess\\models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\dataaccess\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC9DD98-BC8D-4A08-814F-1D4DEDE6E0DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{778C24F3-95B0-4820-9745-A45A497D4D04}|Domain\\Domain.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\domain\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{778C24F3-95B0-4820-9745-A45A497D4D04}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\apiprestamos\\apiprestamos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4D12451C-3269-4DC4-95E6-8166807BF769}|APIPrestamos\\APIPrestamos.csproj|solutionrelative:apiprestamos\\apiprestamos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|d:\\portafolio\\pruebatecnicajohanmejiamakers\\apiprestamos\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3680C6A9-0DB1-4430-9748-40094FE0984F}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:41:46.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:40:19.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\DbInitializer.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\DbInitializer.cs",
+              "RelativeToolTip": "DataAccess\\Models\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:30:57.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoanService.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\LoanService.cs",
+              "RelativeDocumentMoniker": "Services\\LoanService.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\LoanService.cs",
+              "RelativeToolTip": "Services\\LoanService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwEYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:26:45.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILoanService.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Interfaces\\ILoanService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ILoanService.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Interfaces\\ILoanService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ILoanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:26:16.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "APIPrestamos",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\APIPrestamos.csproj",
+              "RelativeDocumentMoniker": "APIPrestamos\\APIPrestamos.csproj",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\APIPrestamos.csproj",
+              "RelativeToolTip": "APIPrestamos\\APIPrestamos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-24T19:23:35.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Program.cs",
+              "RelativeDocumentMoniker": "APIPrestamos\\Program.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Program.cs",
+              "RelativeToolTip": "APIPrestamos\\Program.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:17:30.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\AppDbContext.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccess\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:12:22.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoanRequest.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\LoanRequest.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\LoanRequest.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\LoanRequest.cs",
+              "RelativeToolTip": "DataAccess\\Models\\LoanRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:16:36.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\User.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\DataAccess\\Models\\User.cs",
+              "RelativeToolTip": "DataAccess\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:16:04.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoanRequestDTO.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Domain\\DTOs\\LoanRequestDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\LoanRequestDTO.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Domain\\DTOs\\LoanRequestDTO.cs",
+              "RelativeToolTip": "Domain\\DTOs\\LoanRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:37:44.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoanController.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Controllers\\LoanController.cs",
+              "RelativeDocumentMoniker": "APIPrestamos\\Controllers\\LoanController.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Controllers\\LoanController.cs",
+              "RelativeToolTip": "APIPrestamos\\Controllers\\LoanController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAtwEQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T20:04:40.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "APIPrestamos\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "APIPrestamos\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:53:01.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Services\\JwtTokenService.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:46:14.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\appsettings.json",
+              "RelativeDocumentMoniker": "APIPrestamos\\appsettings.json",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\appsettings.json",
+              "RelativeToolTip": "APIPrestamos\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T19:48:30.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "APIPrestamos\\appsettings.Development.json",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\APIPrestamos\\appsettings.Development.json",
+              "RelativeToolTip": "APIPrestamos\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T19:48:47.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Domain\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\LoginDTO.cs",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Domain\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "Domain\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:53:54.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Services",
+              "DocumentMoniker": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Services.csproj",
+              "RelativeDocumentMoniker": "Services\\Services.csproj",
+              "ToolTip": "D:\\Portafolio\\PruebaTecnicaJohanMejiaMakers\\APIPrestamos\\Services\\Services.csproj",
+              "RelativeToolTip": "Services\\Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-24T19:40:06.215Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

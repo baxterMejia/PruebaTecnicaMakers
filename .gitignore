@@ -1,0 +1,16 @@
+# .NET
+bin/
+obj/
+*.user
+*.vspscc
+*.suo
+.vscode/
+
+# React
+node_modules/
+dist/
+.env
+.DS_Store
+
+# Global
+*.log

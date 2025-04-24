@@ -1,0 +1,145 @@
+/* ROOT RESET Y LAYOUT BASE */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  color: #212529;
+}
+
+/* LOGOS DE EJEMPLO */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* CONTENEDOR PRINCIPAL */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background-color: #1d4ed8;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar a {
+  display: block;
+  background-color: #f0f4ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #0033a0; /* Azul banco */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9fafb;
+}
+
+/* BOTONES */
+button {
+  padding: 10px 16px;
+  background-color: #0033a0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+/* ESTADOS */
+.status.approved {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status.rejected {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* TARJETAS */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* TEXTOS SECUNDARIOS */
+.read-the-docs {
+  color: #888;
+  font-size: 14px;
+}
