@@ -1,0 +1,33 @@
+Johan Sebastián Mejía Carmona  
+Desarrollador de Software  
+Correo: johanmejiac@hotmail.com
+
+---
+
+1. Optimización en sistemas financieros
+
+Si la app tiene que procesar muchas transacciones en tiempo real, lo primero es que todo debe ir en paralelo. Usaría cosas como async/await, colas de procesamiento (tipo RabbitMQ o Azure Service Bus), y separar la lógica de lectura y escritura (CQRS) para que no se estorben. Pondría cache donde no se requiera exactitud al milisegundo, por ejemplo, para consultar saldos recientes o datos de usuario. También aplicaría patrones como Singleton para servicios compartidos, y el patrón de repositorio para mantener limpia la lógica de acceso a datos. Y todo el sistema lo escalaría horizontalmente para que no colapse si hay muchas solicitudes al mismo tiempo.
+
+---
+
+2. Seguridad en APIs financieras
+
+Primero, todo por HTTPS. Luego, JWT bien firmado y validado para cada petición. Contra SQL Injection usaría siempre parámetros (nada de concatenar strings). Para evitar CSRF, protegería todo con tokens antifraude si usara cookies (aunque con JWT eso baja). Contra XSS, validaciones en el frontend y backend, además de sanitizar cualquier entrada que venga del usuario. También activaría rate limiting para que no spameen la API y usaría roles para que cada quien vea solo lo que debe ver.
+
+---
+
+3. Transacciones en sistemas distribuidos
+
+Aquí lo clave es que si algo falla, todo debe deshacerse. No se puede dejar dinero "volando". Usaría patrones como Saga para coordinar entre microservicios, donde cada uno tiene su paso y su rollback por si algo se cae. También pondría validaciones en cada paso, logs, y algo como Event Sourcing si la transacción es crítica, para poder rehacer todo si se cae la red o algo se daña. Si no se puede hacer todo al mismo tiempo, al menos se garantiza consistencia eventual.
+
+---
+
+4. Pruebas unitarias y de integración
+
+Las unitarias serían para probar cada clase o función sola, como si estuviera en una caja. Por ejemplo, probar que si se aprueba un préstamo, el estado cambie correctamente. Las de integración ya serían conectando la API real con la base de datos o servicios simulados. Usaría xUnit para .NET, Jest para frontend y Postman/Newman para tests de endpoints completos. Todo lo correría en un pipeline con GitHub Actions o Azure DevOps antes de subir código.
+
+---
+
+5. Front-end y manejo de estado
+
+En el frontend, todo lo protegería con sessionStorage o localStorage para el token, y lo validaría en cada ruta privada con un ProtectedRoute. El estado lo manejaría con React Context o algún manejador como Zustand o Redux si la app crece. Cada vez que se consulte el saldo o los préstamos, lo haría a través de la API validando el JWT y mostraría los datos en tiempo real. Para evitar errores o inconsistencia, pondría indicadores de carga, refrescaría datos al volver al panel, y todo lo sensible lo limpiaría cuando el usuario cierre sesión.
