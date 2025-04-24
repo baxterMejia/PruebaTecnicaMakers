@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getPendingLoans, updateLoanStatus } from '../services/loanService';
 import '../styles/loan.css';
+import { useNavigate } from 'react-router-dom';
 
 function Admin() {
     const [loans, setLoans] = useState([]);
@@ -10,6 +11,8 @@ function Admin() {
     const [pageSize] = useState(5);
     const [hasMore, setHasMore] = useState(true);
     const [successMessage, setSuccessMessage] = useState('');
+
+    const navigate = useNavigate();
 
     const loadPendingLoans = async (pageToLoad = page) => {
         try {
@@ -26,6 +29,15 @@ function Admin() {
             setLoading(false);
         }
     };
+
+     
+    // Redirección si no hay usuario o si no es Admin
+    useEffect(() => {
+        const user = JSON.parse(sessionStorage.getItem("user") || "null");
+        if (!user || user.role !== "Admin") {
+            navigate("/login");
+        }
+    }, [navigate]);
 
     useEffect(() => {
         loadPendingLoans();

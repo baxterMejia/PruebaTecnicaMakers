@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getLoansByUser, requestLoan } from '../services/loanService';
 import '../styles/loan.css';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const [loans, setLoans] = useState([]);
@@ -10,6 +11,7 @@ function Home() {
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
   const [pageSize] = useState(5); // Puedes ajustar
+  const navigate = useNavigate();
 
   const user = JSON.parse(sessionStorage.getItem('user'));
 
@@ -26,6 +28,17 @@ function Home() {
       setLoading(false);
     }
   };
+
+  // Redirección si no hay usuario
+  useEffect(() => {
+    const userString = sessionStorage.getItem("user");
+    const user = userString ? JSON.parse(userString) : null;
+  
+    if (!user || user.role !== "Client") {
+      navigate("/login");
+    }
+  }, [navigate]);
+  
 
   useEffect(() => {
     if (user) loadLoans();
