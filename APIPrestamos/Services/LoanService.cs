@@ -9,6 +9,9 @@ namespace Services
     {
         private readonly AppDbContext _context;
         private readonly IMemoryCache _cache;
+        private readonly HashSet<string> _cacheKeys = new();
+        private const string CacheKeysMasterKey = "AllCacheKeys";
+
 
         public LoanService(AppDbContext context, IMemoryCache cache)
         {
@@ -16,14 +19,34 @@ namespace Services
             _cache = cache;
         }
 
-        public async Task<List<LoanRequest>> GetByUserIdAsync(int userId, int page, int pageSize)
+        public async Task<List<LoanRequest>> GetByUserIdAsync(int userId, int page, int pageSize, string? status = null)
         {
-            return await _context.LoanRequests
+            string cacheKey = $"user_{userId}_page_{page}_size_{pageSize}_status_{status ?? "all"}";
+
+            if (_cache.TryGetValue(cacheKey, out List<LoanRequest> cachedLoans))
+            {
+                return cachedLoans;
+            }
+
+            var query = _context.LoanRequests
                 .Where(l => l.UserId == userId)
                 .OrderByDescending(l => l.Id)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(status))
+            {
+                query = query.Where(l => l.Status == status);
+            }
+
+            var loans = await query
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
+
+            _cache.Set(cacheKey, loans, TimeSpan.FromMinutes(5));
+            AddCacheKey(cacheKey);
+
+            return loans;
         }
 
 
@@ -45,6 +68,7 @@ namespace Services
 
             // Guarda en caché por 5 minutos
             _cache.Set(cacheKey, loans, TimeSpan.FromMinutes(5));
+            AddCacheKey(cacheKey);
 
             return loans;
         }
@@ -54,11 +78,11 @@ namespace Services
             loan.Status = "Pending";
             _context.LoanRequests.Add(loan);
             await _context.SaveChangesAsync();
+            ClearLoanCache();
         }
 
         public async Task UpdateStatusAsync(int loanId, string newStatus)
         {
-            // Inicia una transacción manual
             using var transaction = await _context.Database.BeginTransactionAsync();
 
             try
@@ -70,20 +94,50 @@ namespace Services
 
                 loan.Status = newStatus;
 
-                // agregar lógica adicional crítica
-               
+                await _context.SaveChangesAsync();              
+             
 
-                await _context.SaveChangesAsync();
-
-                // Confirma todo
                 await transaction.CommitAsync();
+                ClearLoanCache();
             }
             catch (Exception)
-            {                
+            {
                 await transaction.RollbackAsync();
-                throw; 
+                throw;
             }
+        }       
+
+        private void ClearLoanCache()
+        {
+            var allKeys = GetAllCacheKeys();
+
+            foreach (var key in allKeys)
+            {
+                _cache.Remove(key);
+            }
+            
+            _cache.Remove(CacheKeysMasterKey);
         }
 
+
+
+        private void AddCacheKey(string key)
+        {
+            var keys = _cache.GetOrCreate(CacheKeysMasterKey, entry => new HashSet<string>());
+            keys.Add(key);
+            _cache.Set(CacheKeysMasterKey, keys);
+        }
+
+        private HashSet<string> GetAllCacheKeys()
+        {
+            return _cache.Get<HashSet<string>>(CacheKeysMasterKey) ?? new HashSet<string>();
+        }
+
+        private void RemoveCacheKey(string key)
+        {
+            var keys = GetAllCacheKeys();
+            keys.Remove(key);
+            _cache.Set(CacheKeysMasterKey, keys);
+        }
     }
 }

@@ -143,3 +143,47 @@ button:hover {
   color: #888;
   font-size: 14px;
 }
+
+.select-filter {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.button-approve {
+  background-color: #22c55e; /* verde tipo Tailwind */
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.button-approve:hover {
+  background-color: #16a34a; /* verde más oscuro */
+}
+
+.button-reject {
+  background-color: #ef4444; /* rojo tipo Tailwind */
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.button-reject:hover {
+  background-color: #dc2626; /* rojo más oscuro */
+}
+
+

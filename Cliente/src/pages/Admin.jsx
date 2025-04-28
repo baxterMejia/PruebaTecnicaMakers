@@ -30,7 +30,7 @@ function Admin() {
         }
     };
 
-     
+
     // Redirección si no hay usuario o si no es Admin
     useEffect(() => {
         const user = JSON.parse(sessionStorage.getItem("user") || "null");
@@ -47,7 +47,7 @@ function Admin() {
         try {
             await updateLoanStatus(loanId, newStatus);
             setSuccessMessage(`Estado actualizado a "${newStatus}"`);
-            await loadPendingLoans();
+            await loadPendingLoans(1);
 
             // Limpiar mensaje luego de 3 segundos
             setTimeout(() => setSuccessMessage(''), 3000);
@@ -63,6 +63,7 @@ function Admin() {
             {successMessage && (
                 <div className="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded">
                     {successMessage}
+                    <hr></hr>
                 </div>
             )}
 
@@ -86,22 +87,23 @@ function Admin() {
                                 <div className="flex mt-4">
                                     <div className="mr-[100px]">
                                         <button
-                                            className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded shadow"
+                                            className="button-approve"
                                             onClick={() => handleAction(loan.id, 'Approved')}
                                         >
                                             Aprobar
                                         </button>
                                     </div>
-                                    <hr></hr>
+                                    <br></br>
                                     <div>
                                         <button
-                                            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded shadow"
+                                            className="button-reject"
                                             onClick={() => handleAction(loan.id, 'Rejected')}
                                         >
                                             Rechazar
                                         </button>
                                     </div>
                                 </div>
+
                             </div>
                         ))
                     )}

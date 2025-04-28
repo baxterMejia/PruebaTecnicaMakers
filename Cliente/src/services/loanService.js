@@ -8,8 +8,8 @@ const handleUnauthorized = () => {
     window.location.href = '/login';
 };
 
-export const getLoansByUser = async (userId, page = 1, pageSize = 10) => {
-    const res = await fetch(`${API_URL}/loan/user/${userId}?page=${page}&pageSize=${pageSize}`, {
+export const getLoansByUser = async (userId, page = 1, pageSize = 10, status = null) => {
+    const res = await fetch(`${API_URL}/loan/user/${userId}?page=${page}&pageSize=${pageSize}&status=${status}`, {
         headers: {
             Authorization: `Bearer ${getToken()}`
         }

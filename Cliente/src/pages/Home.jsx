@@ -10,15 +10,17 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
-  const [pageSize] = useState(5); // Puedes ajustar
+  const [pageSize] = useState(5);
   const navigate = useNavigate();
+  const [statusFilter, setStatusFilter] = useState('');
+
 
   const user = JSON.parse(sessionStorage.getItem('user'));
 
-  const loadLoans = async (pageToLoad = page) => {
+  const loadLoans = async (pageToLoad = page, status = statusFilter) => {
     try {
       setLoading(true);
-      const data = await getLoansByUser(user.id, pageToLoad, pageSize);
+      const data = await getLoansByUser(user.id, pageToLoad, pageSize, status);
       setLoans(data);
       setError(null);
     } catch {
@@ -33,16 +35,20 @@ function Home() {
   useEffect(() => {
     const userString = sessionStorage.getItem("user");
     const user = userString ? JSON.parse(userString) : null;
-  
+
     if (!user || user.role !== "Client") {
       navigate("/login");
     }
   }, [navigate]);
-  
+
 
   useEffect(() => {
-    if (user) loadLoans();
+    if (user) loadLoans(page, statusFilter);
   }, [page]);
+
+  useEffect(() => {
+    if (user) loadLoans(1, statusFilter);
+  }, [statusFilter]);
 
   const handleRequest = async (e) => {
     e.preventDefault();
@@ -59,8 +65,8 @@ function Home() {
 
       setAmount('');
       setTerm('');
-      setPage(1); // reset a primera página
-      await loadLoans(1);
+      setPage(1);
+      await loadLoans(1, '');
     } catch (err) {
       alert(err.message || "Error al solicitar préstamo");
     }
@@ -69,6 +75,25 @@ function Home() {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Bienvenido, {user?.name}</h1>
+
+      <div className="loan-form mb-4">
+        <label htmlFor="statusFilter" className="mr-2 font-semibold text-gray-700">Filtrar por estado:</label>
+        <div className="mt-2">
+          <select
+            id="statusFilter"
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value)}
+            className="select-filter"
+          >
+            <option value="">Todos</option>
+            <option value="Pending">Pendiente</option>
+            <option value="Approved">Aprobado</option>
+            <option value="Rejected">Rechazado</option>
+          </select>
+        </div>
+      </div>
+
+
 
       <form onSubmit={handleRequest} className="loan-form">
         <h2>Solicitar nuevo préstamo</h2>
@@ -102,6 +127,7 @@ function Home() {
           ) : (
             loans.map((loan, i) => (
               <div key={i} className="loan-card">
+                <p><strong>ID:</strong> {loan.id}</p>
                 <p><strong>Monto:</strong> ${loan.amount.toLocaleString()}</p>
                 <p><strong>Plazo:</strong> {loan.termMonths} meses</p>
                 <p className={`loan-status status ${loan.status.toLowerCase()}`}>

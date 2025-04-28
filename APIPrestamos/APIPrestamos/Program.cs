@@ -32,7 +32,7 @@ builder.Services.AddAuthentication("Bearer")
 builder.Services.AddAuthorization();
 
 // Registro de servicios de negocio
-builder.Services.AddScoped<ILoanService, LoanService>();
+builder.Services.AddTransient<ILoanService, LoanService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtTokenService>();
 

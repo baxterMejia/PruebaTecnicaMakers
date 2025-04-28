@@ -39,11 +39,15 @@ namespace APIPrestamos.Controllers
         }
 
         [HttpGet("user/{userId}")]
-        public async Task<IActionResult> GetByUser(int userId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetByUser(
+              int userId,
+              [FromQuery] int page = 1,
+              [FromQuery] int pageSize = 10,
+              [FromQuery] string? status = null)
         {
             try
             {
-                var result = await _loanService.GetByUserIdAsync(userId, page, pageSize);
+                var result = await _loanService.GetByUserIdAsync(userId, page, pageSize, status);
                 return Ok(result);
             }
             catch (Exception ex)
